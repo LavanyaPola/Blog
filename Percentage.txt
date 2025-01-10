@@ -1,0 +1,19 @@
+public class First {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sub1 = 88;
+		int sub2 = 88;
+		int sub3 = 88;
+		int sub4 = 88;
+		int sub5 = 88;
+		
+		int total = (sub1 + sub2 + sub3 + sub4 + sub5);
+		float p= (float)total;
+		float percentage = (float)((p/500.0)*100.0);
+		System.out.println("Total : "+total);
+		System.out.println("Percentage is = "+percentage);
+		
+	}
+
+}
