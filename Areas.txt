@@ -1,0 +1,29 @@
+public class Area {
+
+	public static void main(String[] args) {
+		// Area of Rectangle
+		int length = 5;
+		int breadth = 10;
+		
+		int area_rectangle = (length * breadth );
+		System.out.println("Area of Rectangle: "+area_rectangle);
+		
+		// Area of  Circle 
+		float r = 5.0f;
+		float area_circle = 3.14f * r * r;
+		System.out.println("Area of Circle: "+area_circle);
+		
+		// Area of triangle
+		float base = 10.4f;
+		float height = 11.2f;
+		float area_triangle = ((0.5f)*(base*height));
+		System.out.println("Area of Triangle: "+area_triangle);
+		
+		//Area of Square
+		int side = 4;
+		int area_square = side * side;
+		System.out.println("Area of Square: "+area_square);
+		
+	}
+
+}
