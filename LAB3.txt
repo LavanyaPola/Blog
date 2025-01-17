@@ -1,0 +1,63 @@
+import java.util.*;
+public class Javapractical {
+
+	public static void main(String[] args) {
+		System.out.println("HELLO WORLD");
+		Scanner sc = new Scanner(System.in);
+		
+		// Lab3 Question 1
+		System.out.println("Enter Integer Value: ");
+		int a = sc.nextInt();							     // Integer Datatype
+		
+		System.out.println("Enter Float Value: ");
+		float b = sc.nextFloat();						    // Float Datatype
+		
+		System.out.println("Enter Double Value: ");
+		double c = sc.nextDouble();						   // Double Datatype
+		
+		System.out.println("Enter Short Value: ");
+		short s = sc.nextShort();                        // Short Datatype
+		
+		System.out.println("Enter Byte Value: ");
+		byte b1 = sc.nextByte();                        // Byte Datatype
+		
+		System.out.println("Enter Long Value: ");
+		long l = sc.nextLong();                        // Long Datatype
+		
+		System.out.println("Enter Charater Value: ");
+		char c1 = sc.next().charAt(0);                // Character Datatype
+		
+		System.out.println("Enter Boolean Value: ");
+		boolean b2 = sc.nextBoolean();              // Boolean Datatype
+		
+		
+		// Lab3 Question 2
+		System.out.println("Enter marks of First Subject: ");
+		int sub1 = sc.nextInt();
+		
+		System.out.println("Enter marks of Second Subject: ");
+		int sub2 = sc.nextInt();
+		
+		System.out.println("Enter marks of Third Subject: ");
+		int sub3 = sc.nextInt();
+		
+		System.out.println("Enter marks of Fourth Subject: ");
+		int sub4 = sc.nextInt();
+		
+		System.out.println("Enter marks of Fifth Subject: ");
+		int sub5 = sc.nextInt();
+		
+		int totalmarks = (sub1 + sub2 + sub3 + sub4 + sub5);
+		float p= (float)totalmarks;
+		float result = (float)((p/500.0)*100.0);
+		System.out.println("Your Precentage is: "+result);
+		if(result >= 35) {
+			System.out.println("Result: Pass");
+		}
+		else {
+			System.out.println("Result: Fail");
+		}
+	
+	}
+
+}
