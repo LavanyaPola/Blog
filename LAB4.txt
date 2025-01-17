@@ -1,0 +1,32 @@
+public class Lab4 {
+	 // Instance Variable
+	String var3 = "Instance Variable";
+	
+	 // Static Variable
+	static String var1 = "Static Variable";
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	   //LAB4 QUESTION1
+		
+		int intValue = 100;
+        long longValue = intValue; // int to long
+
+        float floatValue = longValue; // long to float
+        double doubleValue = floatValue; // float to double
+        
+        System.out.println("intValue: " + intValue);
+        System.out.println("longValue: " + longValue);
+        System.out.println("floatValue: " + floatValue);
+        System.out.println("doubleValue: " + doubleValue);
+        
+        //LAB4 QUESTION 2
+        
+        // Local Variable
+        String var2 = "Local Variable";
+        System.out.println("Static Variable: "+var1);
+        System.out.println("Instance Variable: "+var2);
+        
+	}
+
+}
