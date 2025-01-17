@@ -1,0 +1,64 @@
+import java.util.*;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		// Question 1: Mini Calculator
+		System.out.println("Wel - Come");
+		System.out.println("1. Addition.");
+		System.out.println("2. Subtraction.");
+		System.out.println("3. Division.");
+		System.out.println("4. Multiplication.");
+		System.out.println("5. Modulus.");
+		System.out.println("Enter Your Choice Please......");
+		int ch = sc.nextInt();
+		System.out.println("Enter First Number: ");
+		int f = sc.nextInt();
+		System.out.println("Enter Second Number: ");
+		int s = sc.nextInt();
+	
+		if (ch == 1) {
+			System.out.println("The Addition is: "+(f+s));
+		}
+		else if(ch == 2) {
+			System.out.println("The Subtraction is: "+(f-s));
+		}
+		else if(ch == 3) {
+			System.out.println("The Division is: "+(f/s));
+		}
+		else if(ch == 4) {
+			System.out.println("The Multiplication is: "+(f*s));
+		}
+		else if(ch == 5) {
+			System.out.println("The Modulus is: "+(f%s));
+		}
+		else {
+			System.out.println("Please Choose correct option");
+		}
+		
+		
+		// Question 2: Banking Application
+		System.out.println("Wel - Come");
+		System.out.println("1. Withdraw");
+		System.out.println("2. Deposite");
+		System.out.println("3. Available Balance");
+		System.out.println("Wel - Come");
+		System.out.println("Enter Your Choice Please......");
+		int choice = sc.nextInt();
+		if (choice == 1) {
+			System.out.println("Amount debited successfully.");
+		}
+		else if(ch == 2) {
+			System.out.println("Amount deposited successfully.");
+		}
+		else if(choice == 3)
+		{
+			System.out.println("Your Available balance...");
+		}
+
+	}
+
+}
