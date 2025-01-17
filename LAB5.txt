@@ -1,0 +1,171 @@
+//LAB5 Question1
+public class Employee {
+
+    private String n; 
+    private double s; 
+
+    public Employee(String n, double s) {
+        this.n = n;
+        this.s = s;
+    }
+
+    public String getName() {
+        return n;
+    }
+
+    public void setName(String n) {
+        this.n = n;
+    }
+
+    public double getSalary() {
+        return s;
+    }
+
+    public void setSalary(double s) {
+        this.s = s;
+    }
+
+    public double calcInc(double incPct) {
+        return s + (s * incPct / 100);
+    }
+
+    public void printEmp() {
+        System.out.println("Name: " + n);
+        System.out.println("Salary: " + s);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee("John Doe", 50000.0);
+        Employee e2 = new Employee("Jane Smith", 60000.0);
+
+        System.out.println("Employee 1 Details:");
+        e1.printEmp();
+        double incSal1 = e1.calcInc(10.0);
+        System.out.println("Inc. Salary for Emp 1: " + incSal1);
+
+        System.out.println("\nEmployee 2 Details:");
+        e2.printEmp();
+        double incSal2 = e2.calcInc(8.0);
+        System.out.println("Inc. Salary for Emp 2: " + incSal2);
+    }
+}
+
+//LAB5 Question2
+
+public class Student {
+
+    private String name;
+    private int rollNo;
+    private int subject1Marks;
+    private int subject2Marks;
+    private int subject3Marks;
+    private int subject4Marks;
+    private int subject5Marks;
+
+    public Student(String name, int rollNo, int subject1Marks, int subject2Marks, int subject3Marks, int subject4Marks, int subject5Marks) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.subject1Marks = subject1Marks;
+        this.subject2Marks = subject2Marks;
+        this.subject3Marks = subject3Marks;
+        this.subject4Marks = subject4Marks;
+        this.subject5Marks = subject5Marks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public int getSubject1Marks() {
+        return subject1Marks;
+    }
+
+    public void setSubject1Marks(int subject1Marks) {
+        this.subject1Marks = subject1Marks;
+    }
+
+    public int getSubject2Marks() {
+        return subject2Marks;
+    }
+
+    public void setSubject2Marks(int subject2Marks) {
+        this.subject2Marks = subject2Marks;
+    }
+
+    public int getSubject3Marks() {
+        return subject3Marks;
+    }
+
+    public void setSubject3Marks(int subject3Marks) {
+        this.subject3Marks = subject3Marks;
+    }
+
+    public int getSubject4Marks() {
+        return subject4Marks;
+    }
+
+    public void setSubject4Marks(int subject4Marks) {
+        this.subject4Marks = subject4Marks;
+    }
+
+    public int getSubject5Marks() {
+        return subject5Marks;
+    }
+
+    public void setSubject5Marks(int subject5Marks) {
+        this.subject5Marks = subject5Marks;
+    }
+
+    public double calculatePercentage() {
+        int totalMarks = subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks;
+        return (double) totalMarks / 5; 
+    }
+
+    public String getResult() {
+        double percentage = calculatePercentage();
+        if (percentage >= 60) {
+            return "Pass";
+        } else {
+            return "Fail";
+        }
+    }
+
+    public void printStudentDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Subject 1 Marks: " + subject1Marks);
+        System.out.println("Subject 2 Marks: " + subject2Marks);
+        System.out.println("Subject 3 Marks: " + subject3Marks);
+        System.out.println("Subject 4 Marks: " + subject4Marks);
+        System.out.println("Subject 5 Marks: " + subject5Marks);
+        System.out.println("Percentage: " + calculatePercentage() + "%");
+        System.out.println("Result: " + getResult());
+        System.out.println();
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Student student1 = new Student("Alice", 1, 85, 90, 78, 88, 92);
+        Student student2 = new Student("Bob", 2, 60, 55, 70, 65, 58);
+
+        student1.printStudentDetails();
+        student2.printStudentDetails();
+    }
+}
