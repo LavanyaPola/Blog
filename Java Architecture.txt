@@ -1,0 +1,16 @@
+public class JavaA {
+
+	public static void main(String[] args) {
+		System.out.println("HELLO WORLD");
+		
+		int a = 10;					     // Integer Datatype
+		float b = 10.3f;				    // Float Datatype
+		double c = 10.5;				   // Double Datatype
+		short s = 2;                                      // Short Datatype
+		byte b1 = 2;                                     // Byte Datatype
+		long l = 2l;                                    // Long Datatype
+		char c1 = 'A';                                 // Character Datatype
+		boolean b2 = true;                            // Boolean Datatype
+	}
+
+}
