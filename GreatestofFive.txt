@@ -1,0 +1,44 @@
+import java.util.*;
+public class GreatestofFive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter First Number:");
+		int num1 = sc.nextInt();
+		
+		System.out.println("Enter Second Number:");
+		int num2 = sc.nextInt();
+		
+		System.out.println("Enter Third Number:");
+		int num3 = sc.nextInt();
+		
+		System.out.println("Enter Fourth Number:");
+		int num4 = sc.nextInt();
+		
+		System.out.println("Enter Fifth Number:");
+		int num5 = sc.nextInt();
+		
+		if((num1> num2) && (num1 > num3) && (num1 > num4) && (num1 > num5)) {
+			System.out.println("The Greatest Number is: "+num1);
+		}
+		
+		else if((num2> num1) && (num2 > num3) && (num2 > num4) && (num2 > num5)) {
+			System.out.println("The Greatest Number is: "+num2);
+		}
+		
+		else if((num3 > num1) && (num3 > num2) && (num3 > num4) && (num3 > num5)){
+			System.out.println("The Greatest Number is: "+num3);
+		}
+		else if((num4 > num1) && (num4 > num2) && (num4 > num3) && (num4 > num5))
+		{
+			System.out.println("The Greatest Number is: "+num4);
+		}
+		else
+		{
+			System.out.println("The Greatest Number is: "+num5);
+		}
+		
+	}
+
+}
