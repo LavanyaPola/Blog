@@ -1,0 +1,64 @@
+//LAB6(1)
+
+import java.util.*;
+
+public class LeapYear {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Year: ");				// User Input
+		int l = sc.nextInt();
+		
+		if ((l % 4) == 0) {								// when condition  is true then if is executed 
+			System.out.println(l+" is Leap Year.");
+		}
+		else											// // when condition  is false then if is executed 
+		{
+			System.out.println(l+" is Not Leap Year.");
+		}
+	}
+
+}
+
+
+
+//LAB6(2)
+
+public class ReverseNumber {
+	
+	int sum = 0;
+	int reverse(int base)
+	{
+		while(base != 0)					// Logic For reverse the number
+		{
+		
+		int rem = base % 10;
+		sum= sum * 10 + rem;
+		base = base / 10;
+		}
+		return sum;
+	}
+}
+
+//Main 
+import java.util.*;
+
+public class ReverseNumberMain {
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+		 ReverseNumber ret1 = new ReverseNumber();				     // Object Creation
+		 
+		 System.out.println("Enter a number to be Reversed: ");		// User Input
+		 int demo = sc.nextInt();	
+		 
+		 System.out.println("Original Number is: "+demo);
+		 int result;
+		 result = ret1.reverse(demo);								// method calling
+		 
+		 System.out.println("Reversed Number is: "+result);
+	}
+
+}
